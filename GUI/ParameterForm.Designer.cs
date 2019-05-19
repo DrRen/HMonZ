@@ -1,12 +1,4 @@
-﻿/*
- 
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
- 
-  Copyright (C) 2009-2010 Michael Möller <mmoeller@openhardwaremonitor.org>
-	
-*/
+﻿
 
 namespace HMonZ.GUI {
   partial class ParameterForm {
@@ -68,7 +60,7 @@ namespace HMonZ.GUI {
       this.cancelButton.Name = "cancelButton";
       this.cancelButton.Size = new System.Drawing.Size(75, 23);
       this.cancelButton.TabIndex = 3;
-      this.cancelButton.Text = "Cancel";
+      this.cancelButton.Text = "Отмена";
       this.cancelButton.UseVisualStyleBackColor = true;
       // 
       // captionLabel
@@ -123,7 +115,7 @@ namespace HMonZ.GUI {
       // NameColumn
       // 
       this.NameColumn.DataPropertyName = "Name";
-      this.NameColumn.HeaderText = "Name";
+      this.NameColumn.HeaderText = "Название";
       this.NameColumn.Name = "NameColumn";
       this.NameColumn.ReadOnly = true;
       this.NameColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -132,14 +124,14 @@ namespace HMonZ.GUI {
       // 
       this.Default.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
       this.Default.DataPropertyName = "Default";
-      this.Default.HeaderText = "Default";
+      this.Default.HeaderText = "По умолчанию";
       this.Default.Name = "Default";
       this.Default.Width = 47;
       // 
       // ValueColumn
       // 
       this.ValueColumn.DataPropertyName = "Value";
-      this.ValueColumn.HeaderText = "Value";
+      this.ValueColumn.HeaderText = "Значение";
       this.ValueColumn.Name = "ValueColumn";
       this.ValueColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
       // 
@@ -176,7 +168,7 @@ namespace HMonZ.GUI {
       this.ShowIcon = false;
       this.ShowInTaskbar = false;
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-      this.Text = "Parameters";
+      this.Text = "Параметры";
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
       this.ResumeLayout(false);

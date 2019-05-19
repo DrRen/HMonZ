@@ -1,9 +1,3 @@
-<!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/.  
-	 
-	 - Copyright (C) 2012 Prince Samuel <prince.samuel@gmail.com>  -->
-
 <html>
   <head>
     <title>HMonZ - Web Version</title>
@@ -38,15 +32,15 @@
     <div class="header">
 
       <span id="toolbar" class="ui-widget-header ui-corner-all">
-        <button id="refresh" data-bind="click: update">Refresh</button>
-        <input type="checkbox" id="auto_refresh" data-bind="checked: auto_refresh"/><label for="auto_refresh">Auto Refresh</label>
+        <button id="refresh" data-bind="click: update">Обновить</button>
+        <input type="checkbox" id="auto_refresh" data-bind="checked: auto_refresh"/><label for="auto_refresh">Авто-обновление</label>
         &nbsp;<div id="slider"></div>&nbsp;&nbsp;&nbsp;&nbsp;<span for="auto_refresh" id="lbl"></span>
       </span>
     </div>
 
     <div class="main">
       <table data-bind="treeTable: flattened, treeOptions: { initialState: 'expanded', clickableNodeNames: true } ">
-        <thead><td>Sensor</td><td>Min</td><td>Value</td><td>Max</td>
+        <thead><td>Сенсор</td><td>Мин</td><td>Значение</td><td>Макс</td>
           <tbody data-bind="foreach: flattened">
             <tr data-bind="attr: { 'id': 'node-' + id(), 'class': parent.id()?'child-of-node-' + parent.id():'' }">
               <td data-bind="html: '<img src=' + ImageURL() + ' />&nbsp; ' + Text()"></td>

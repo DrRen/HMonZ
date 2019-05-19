@@ -1,12 +1,4 @@
-/*
- 
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
- 
-  Copyright (C) 2009-2018 Michael Möller <mmoeller@openhardwaremonitor.org>
-	
-*/
+
 
 using System;
 using System.Globalization;
@@ -55,7 +47,7 @@ namespace HMonZ.Hardware.CPU {
     private readonly uint[] energyStatusMSRs = { MSR_PKG_ENERY_STATUS, 
       MSR_PP0_ENERY_STATUS, MSR_PP1_ENERY_STATUS, MSR_DRAM_ENERGY_STATUS };
     private readonly string[] powerSensorLabels = 
-      { "CPU Package", "CPU Cores", "CPU Graphics", "CPU DRAM" };
+      { "CPU Пакет", "CPU Ядра", "CPU Графика", "CPU Память" };
     private float energyUnitMultiplier = 0;
     private DateTime[] lastEnergyTime;
     private uint[] lastEnergyConsumed;
@@ -274,7 +266,7 @@ namespace HMonZ.Hardware.CPU {
         (cpuid[0][0].Data[6, 0] & 0x40) != 0 && 
         microarchitecture != Microarchitecture.Unknown) 
       {
-        packageTemperature = new Sensor("CPU Package",
+        packageTemperature = new Sensor("CPU Пакет",
           coreTemperatures.Length, SensorType.Temperature, this, new[] { 
               new ParameterDescription(
                 "TjMax [°C]", "TjMax temperature of the package sensor.\n" + 
@@ -285,7 +277,7 @@ namespace HMonZ.Hardware.CPU {
         ActivateSensor(packageTemperature);
       }
 
-      busClock = new Sensor("Bus Speed", 0, SensorType.Clock, this, settings);
+      busClock = new Sensor("Частота шины", 0, SensorType.Clock, this, settings);
       coreClocks = new Sensor[coreCount];
       for (int i = 0; i < coreClocks.Length; i++) {
         coreClocks[i] =

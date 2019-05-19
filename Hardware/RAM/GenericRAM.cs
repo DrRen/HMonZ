@@ -1,12 +1,4 @@
-﻿/*
- 
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
- 
-  Copyright (C) 2012 Michael Möller <mmoeller@openhardwaremonitor.org>
-	
-*/
+﻿
 
 using System.Runtime.InteropServices;
 
@@ -20,14 +12,14 @@ namespace HMonZ.Hardware.RAM {
     public GenericRAM(string name, ISettings settings)
       : base(name, new Identifier("ram"), settings)
     {   
-      loadSensor = new Sensor("Memory", 0, SensorType.Load, this, settings);
+      loadSensor = new Sensor("Память", 0, SensorType.Load, this, settings);
       ActivateSensor(loadSensor);
 
-      usedMemory = new Sensor("Used Memory", 0, SensorType.Data, this,
+      usedMemory = new Sensor("Использовано", 0, SensorType.Data, this,
         settings);
       ActivateSensor(usedMemory);
 
-      availableMemory = new Sensor("Available Memory", 1, SensorType.Data, this, 
+      availableMemory = new Sensor("Доступно", 1, SensorType.Data, this, 
         settings);
       ActivateSensor(availableMemory);
     }

@@ -1,12 +1,4 @@
-/*
- 
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
- 
-  Copyright (C) 2009-2014 Michael Möller <mmoeller@openhardwaremonitor.org>
-	
-*/
+
 
 using System;
 using System.Globalization;
@@ -35,13 +27,13 @@ namespace HMonZ.Hardware.ATI {
       this.busNumber = busNumber;
       this.deviceNumber = deviceNumber;
 
-      this.temperature = new Sensor("GPU Core", 0, SensorType.Temperature, this, settings);
-      this.fan = new Sensor("GPU Fan", 0, SensorType.Fan, this, settings);
-      this.coreClock = new Sensor("GPU Core", 0, SensorType.Clock, this, settings);
-      this.memoryClock = new Sensor("GPU Memory", 1, SensorType.Clock, this, settings);
-      this.coreVoltage = new Sensor("GPU Core", 0, SensorType.Voltage, this, settings);
-      this.coreLoad = new Sensor("GPU Core", 0, SensorType.Load, this, settings);
-      this.controlSensor = new Sensor("GPU Fan", 0, SensorType.Control, this, settings);
+      this.temperature = new Sensor("GPU Ядро", 0, SensorType.Temperature, this, settings);
+      this.fan = new Sensor("GPU Вентелятор", 0, SensorType.Fan, this, settings);
+      this.coreClock = new Sensor("GPU Ядро", 0, SensorType.Clock, this, settings);
+      this.memoryClock = new Sensor("GPU Память", 1, SensorType.Clock, this, settings);
+      this.coreVoltage = new Sensor("GPU Ядро", 0, SensorType.Voltage, this, settings);
+      this.coreLoad = new Sensor("GPU Ядро", 0, SensorType.Load, this, settings);
+      this.controlSensor = new Sensor("GPU Вентелятор", 0, SensorType.Control, this, settings);
 
       ADLFanSpeedInfo afsi = new ADLFanSpeedInfo();
       if (ADL.ADL_Overdrive5_FanSpeedInfo_Get(adapterIndex, 0, ref afsi)

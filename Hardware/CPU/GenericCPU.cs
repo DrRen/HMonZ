@@ -1,12 +1,4 @@
-﻿/*
- 
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
- 
-  Copyright (C) 2010-2011 Michael Möller <mmoeller@openhardwaremonitor.org>
-	
-*/
+﻿
 
 using System;
 using System.Collections.Generic;
@@ -48,9 +40,9 @@ namespace HMonZ.Hardware.CPU {
 
     protected string CoreString(int i) {
       if (coreCount == 1)
-        return "CPU Core";
+        return "CPU Ядро";
       else
-        return "CPU Core #" + (i + 1);
+        return "CPU Ядро #" + (i + 1);
     }
 
     public GenericCPU(int processorIndex, CPUID[][] cpuid, ISettings settings)
@@ -90,7 +82,7 @@ namespace HMonZ.Hardware.CPU {
         isInvariantTimeStampCounter = false;
 
       if (coreCount > 1)
-        totalLoad = new Sensor("CPU Total", 0, SensorType.Load, this, settings);
+        totalLoad = new Sensor("CPU Всего", 0, SensorType.Load, this, settings);
       else
         totalLoad = null;
       coreLoads = new Sensor[coreCount];

@@ -1,13 +1,4 @@
-﻿/*
- 
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
- 
-  Copyright (C) 2009-2015 Michael Möller <mmoeller@openhardwaremonitor.org>
-	Copyright (C) 2011 Christian Vallières
- 
-*/
+﻿
 
 using System;
 using System.Globalization;
@@ -45,10 +36,10 @@ namespace HMonZ.Hardware.Nvidia {
         NvSensor sensor = thermalSettings.Sensor[i];
         string name;
         switch (sensor.Target) {
-          case NvThermalTarget.BOARD: name = "GPU Board"; break;
-          case NvThermalTarget.GPU: name = "GPU Core"; break;
-          case NvThermalTarget.MEMORY: name = "GPU Memory"; break;
-          case NvThermalTarget.POWER_SUPPLY: name = "GPU Power Supply"; break;
+          case NvThermalTarget.BOARD: name = "GPU Плата"; break;
+          case NvThermalTarget.GPU: name = "GPU Ядро"; break;
+          case NvThermalTarget.MEMORY: name = "GPU Память"; break;
+          case NvThermalTarget.POWER_SUPPLY: name = "GPU Цепи питания"; break;
           case NvThermalTarget.UNKNOWN: name = "GPU Unknown"; break;
           default: name = "GPU"; break;
         }
@@ -67,21 +58,21 @@ namespace HMonZ.Hardware.Nvidia {
       }
 
       clocks = new Sensor[3];
-      clocks[0] = new Sensor("GPU Core", 0, SensorType.Clock, this, settings);
-      clocks[1] = new Sensor("GPU Memory", 1, SensorType.Clock, this, settings);
-      clocks[2] = new Sensor("GPU Shader", 2, SensorType.Clock, this, settings);
+      clocks[0] = new Sensor("GPU Ядро", 0, SensorType.Clock, this, settings);
+      clocks[1] = new Sensor("GPU Память", 1, SensorType.Clock, this, settings);
+      clocks[2] = new Sensor("GPU Шейдеры", 2, SensorType.Clock, this, settings);
       for (int i = 0; i < clocks.Length; i++)
         ActivateSensor(clocks[i]);
 
       loads = new Sensor[3];
-      loads[0] = new Sensor("GPU Core", 0, SensorType.Load, this, settings);
-      loads[1] = new Sensor("GPU Memory Controller", 1, SensorType.Load, this, settings);
-      loads[2] = new Sensor("GPU Video Engine", 2, SensorType.Load, this, settings);
-      memoryLoad = new Sensor("GPU Memory", 3, SensorType.Load, this, settings);
-      memoryFree = new Sensor("GPU Memory Free", 1, SensorType.SmallData, this, settings);
-      memoryUsed = new Sensor("GPU Memory Used", 2, SensorType.SmallData, this, settings);
-      memoryAvail = new Sensor("GPU Memory Total", 3, SensorType.SmallData, this, settings);
-      control = new Sensor("GPU Fan", 0, SensorType.Control, this, settings);
+      loads[0] = new Sensor("GPU Ядро", 0, SensorType.Load, this, settings);
+      loads[1] = new Sensor("GPU Память Контоллер", 1, SensorType.Load, this, settings);
+      loads[2] = new Sensor("GPU Видео движок", 2, SensorType.Load, this, settings);
+      memoryLoad = new Sensor("GPU Память", 3, SensorType.Load, this, settings);
+      memoryFree = new Sensor("GPU Память Свободно", 1, SensorType.SmallData, this, settings);
+      memoryUsed = new Sensor("GPU Память Использовано", 2, SensorType.SmallData, this, settings);
+      memoryAvail = new Sensor("GPU Память Всего", 3, SensorType.SmallData, this, settings);
+      control = new Sensor("GPU Вентелятор", 0, SensorType.Control, this, settings);
 
       NvGPUCoolerSettings coolerSettings = GetCoolerSettings();
       if (coolerSettings.Count > 0) {

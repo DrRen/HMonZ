@@ -1,12 +1,4 @@
-﻿/*
- 
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
- 
-  Copyright (C) 2012-2013 Michael Möller <mmoeller@openhardwaremonitor.org>
-	
-*/
+﻿
 
 using System;
 
@@ -24,7 +16,7 @@ namespace HMonZ.Hardware.RAM {
         return;
       }
 
-      hardware = new Hardware[] { new GenericRAM("Generic Memory", settings) };
+      hardware = new Hardware[] { new GenericRAM("Оперативная память", settings) };
     }
 
     public string GetReport() {

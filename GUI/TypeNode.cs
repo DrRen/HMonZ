@@ -1,12 +1,4 @@
-﻿/*
- 
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
- 
-  Copyright (C) 2009-2012 Michael Möller <mmoeller@openhardwaremonitor.org>
-	
-*/
+﻿
 
 using System;
 using System.Collections.Generic;
@@ -23,51 +15,51 @@ namespace HMonZ.GUI {
       switch (sensorType) {
         case SensorType.Voltage: 
           this.Image = Utilities.EmbeddedResources.GetImage("voltage.png");
-          this.Text = "Voltages";
+          this.Text = "Напряжения";
           break;
         case SensorType.Clock:
           this.Image = Utilities.EmbeddedResources.GetImage("clock.png");
-          this.Text = "Clocks";
+          this.Text = "Частоты";
           break;
         case SensorType.Load:
           this.Image = Utilities.EmbeddedResources.GetImage("load.png");
-          this.Text = "Load";
+          this.Text = "Нагрузка";
           break;
         case SensorType.Temperature:
           this.Image = Utilities.EmbeddedResources.GetImage("temperature.png");
-          this.Text = "Temperatures";
+          this.Text = "Температуры";
           break;
         case SensorType.Fan:
           this.Image = Utilities.EmbeddedResources.GetImage("fan.png");
-          this.Text = "Fans";
+          this.Text = "Вентеляторы";
           break;
         case SensorType.Flow:
           this.Image = Utilities.EmbeddedResources.GetImage("flow.png");
-          this.Text = "Flows";
+          this.Text = "Поток";
           break;
         case SensorType.Control:
           this.Image = Utilities.EmbeddedResources.GetImage("control.png");
-          this.Text = "Controls";
+          this.Text = "Контроллеры";
           break;
         case SensorType.Level:
           this.Image = Utilities.EmbeddedResources.GetImage("level.png");
-          this.Text = "Levels";
+          this.Text = "Уровни";
           break;
         case SensorType.Power:
           this.Image = Utilities.EmbeddedResources.GetImage("power.png");
-          this.Text = "Powers";
+          this.Text = "Мощность";
           break;
         case SensorType.Data:
           this.Image = Utilities.EmbeddedResources.GetImage("data.png");
-          this.Text = "Data";
+          this.Text = "Данные";
           break;
         case SensorType.SmallData :
           this.Image = Utilities.EmbeddedResources.GetImage("data.png");
-          this.Text = "Data";
+          this.Text = "Данные";
           break;
         case SensorType.Factor:
           this.Image = Utilities.EmbeddedResources.GetImage("factor.png");
-          this.Text = "Factors";
+          this.Text = "Факторы";
           break;
       }
 

@@ -71,7 +71,7 @@ namespace HMonZ.Hardware.CPU {
       miscellaneousControlAddress = GetPciAddress(
         MISCELLANEOUS_CONTROL_FUNCTION, MISCELLANEOUS_CONTROL_DEVICE_ID);
 
-      busClock = new Sensor("Bus Speed", 0, SensorType.Clock, this, settings);
+      busClock = new Sensor("Частота шины", 0, SensorType.Clock, this, settings);
       coreClocks = new Sensor[coreCount];
       for (int i = 0; i < coreClocks.Length; i++) {
         coreClocks[i] = new Sensor(CoreString(i), i + 1, SensorType.Clock,

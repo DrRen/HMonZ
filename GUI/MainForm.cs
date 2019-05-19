@@ -655,27 +655,27 @@ namespace HMonZ.GUI {
         if (node != null && node.Sensor != null) {
           treeContextMenu.MenuItems.Clear();
           if (node.Sensor.Parameters.Length > 0) {
-            MenuItem item = new MenuItem("Parameters...");
+            MenuItem item = new MenuItem("Параметры...");
             item.Click += delegate(object obj, EventArgs args) {
               ShowParameterForm(node.Sensor);
             };
             treeContextMenu.MenuItems.Add(item);
           }
           if (nodeTextBoxText.EditEnabled) {
-            MenuItem item = new MenuItem("Rename");
+            MenuItem item = new MenuItem("Переименовать");
             item.Click += delegate(object obj, EventArgs args) {
               nodeTextBoxText.BeginEdit();
             };
             treeContextMenu.MenuItems.Add(item);
           }
           if (node.IsVisible) {
-            MenuItem item = new MenuItem("Hide");
+            MenuItem item = new MenuItem("Скрыть");
             item.Click += delegate(object obj, EventArgs args) {
               node.IsVisible = false;
             };
             treeContextMenu.MenuItems.Add(item);
           } else {
-            MenuItem item = new MenuItem("Unhide");
+            MenuItem item = new MenuItem("Показать");
             item.Click += delegate(object obj, EventArgs args) {
               node.IsVisible = true;
             };
@@ -683,7 +683,7 @@ namespace HMonZ.GUI {
           }
           treeContextMenu.MenuItems.Add(new MenuItem("-"));
           {
-            MenuItem item = new MenuItem("Pen Color...");
+            MenuItem item = new MenuItem("Цвет...");
             item.Click += delegate(object obj, EventArgs args) {
               ColorDialog dialog = new ColorDialog();
               dialog.Color = node.PenColor.GetValueOrDefault();
@@ -693,7 +693,7 @@ namespace HMonZ.GUI {
             treeContextMenu.MenuItems.Add(item);
           }
           {
-            MenuItem item = new MenuItem("Reset Pen Color");
+            MenuItem item = new MenuItem("Сбросить цвет");
             item.Click += delegate(object obj, EventArgs args) {
               node.PenColor = null;
             };
@@ -701,7 +701,7 @@ namespace HMonZ.GUI {
           }
           treeContextMenu.MenuItems.Add(new MenuItem("-"));
           {
-            MenuItem item = new MenuItem("Show in Tray");
+            MenuItem item = new MenuItem("Показать в трее");
             item.Checked = systemTray.Contains(node.Sensor);
             item.Click += delegate(object obj, EventArgs args) {
               if (item.Checked)
@@ -712,7 +712,7 @@ namespace HMonZ.GUI {
             treeContextMenu.MenuItems.Add(item);
           }
           if (gadget != null) {
-            MenuItem item = new MenuItem("Show in Gadget");
+            MenuItem item = new MenuItem("Показать в гаджете");
             item.Checked = gadget.Contains(node.Sensor);
             item.Click += delegate(object obj, EventArgs args) {
               if (item.Checked) {
@@ -726,14 +726,14 @@ namespace HMonZ.GUI {
           if (node.Sensor.Control != null) {
             treeContextMenu.MenuItems.Add(new MenuItem("-"));
             IControl control = node.Sensor.Control;
-            MenuItem controlItem = new MenuItem("Control");
-            MenuItem defaultItem = new MenuItem("Default");
+            MenuItem controlItem = new MenuItem("Контроль");
+            MenuItem defaultItem = new MenuItem("По умолчанию");
             defaultItem.Checked = control.ControlMode == ControlMode.Default;
             controlItem.MenuItems.Add(defaultItem);
             defaultItem.Click += delegate(object obj, EventArgs args) {
               control.SetDefault();
             };
-            MenuItem manualItem = new MenuItem("Manual");
+            MenuItem manualItem = new MenuItem("Ручной режим");
             controlItem.MenuItems.Add(manualItem);
             manualItem.Checked = control.ControlMode == ControlMode.Software;
             for (int i = 0; i <= 100; i += 5) {
@@ -761,7 +761,7 @@ namespace HMonZ.GUI {
           treeContextMenu.MenuItems.Clear();
 
           if (nodeTextBoxText.EditEnabled) {
-            MenuItem item = new MenuItem("Rename");
+            MenuItem item = new MenuItem("Переименовать");
             item.Click += delegate(object obj, EventArgs args) {
               nodeTextBoxText.BeginEdit();
             };
@@ -904,5 +904,9 @@ namespace HMonZ.GUI {
       get { return server; }
     }
 
-  }
+        private void treeContextMenu_Popup(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

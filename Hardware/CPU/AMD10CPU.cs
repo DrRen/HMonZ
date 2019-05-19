@@ -1,12 +1,4 @@
-﻿/*
- 
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
- 
-  Copyright (C) 2009-2013 Michael Möller <mmoeller@openhardwaremonitor.org>
-	
-*/
+﻿
 
 using System;
 using System.Collections.Generic;
@@ -96,7 +88,7 @@ namespace HMonZ.Hardware.CPU {
       miscellaneousControlAddress = GetPciAddress(
         MISCELLANEOUS_CONTROL_FUNCTION, miscellaneousControlDeviceId);        
 
-      busClock = new Sensor("Bus Speed", 0, SensorType.Clock, this, settings);
+      busClock = new Sensor("Частота шины", 0, SensorType.Clock, this, settings);
       coreClocks = new Sensor[coreCount];
       for (int i = 0; i < coreClocks.Length; i++) {
         coreClocks[i] = new Sensor(CoreString(i), i + 1, SensorType.Clock,

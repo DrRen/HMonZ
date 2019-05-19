@@ -106,28 +106,28 @@
             // 
             // sensor
             // 
-            this.sensor.Header = "Sensor";
+            this.sensor.Header = "Сенсор";
             this.sensor.SortOrder = System.Windows.Forms.SortOrder.None;
             this.sensor.TooltipText = null;
             this.sensor.Width = 250;
             // 
             // value
             // 
-            this.value.Header = "Value";
+            this.value.Header = "Значение";
             this.value.SortOrder = System.Windows.Forms.SortOrder.None;
             this.value.TooltipText = null;
             this.value.Width = 100;
             // 
             // min
             // 
-            this.min.Header = "Min";
+            this.min.Header = "Мин";
             this.min.SortOrder = System.Windows.Forms.SortOrder.None;
             this.min.TooltipText = null;
             this.min.Width = 100;
             // 
             // max
             // 
-            this.max.Header = "Max";
+            this.max.Header = "Макс";
             this.max.SortOrder = System.Windows.Forms.SortOrder.None;
             this.max.TooltipText = null;
             this.max.Width = 100;
@@ -577,13 +577,17 @@
             this.aboutMenuItem.Text = "Об авторе";
             this.aboutMenuItem.Click += new System.EventHandler(this.aboutMenuItem_Click);
             // 
+            // treeContextMenu
+            // 
+            this.treeContextMenu.Popup += new System.EventHandler(this.treeContextMenu_Popup);
+            // 
             // saveFileDialog
             // 
             this.saveFileDialog.DefaultExt = "txt";
-            this.saveFileDialog.FileName = "OpenHardwareMonitor.Report.txt";
+            this.saveFileDialog.FileName = "HMonZ.Report.txt";
             this.saveFileDialog.Filter = "Text Documents|*.txt|All Files|*.*";
             this.saveFileDialog.RestoreDirectory = true;
-            this.saveFileDialog.Title = "Save Report As";
+            this.saveFileDialog.Title = "Сохранить отчёт как...";
             // 
             // timer
             // 
@@ -649,7 +653,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 554);
+            this.ClientSize = new System.Drawing.Size(418, 491);
             this.Controls.Add(this.splitContainer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Menu = this.mainMenu;
