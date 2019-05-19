@@ -8,7 +8,7 @@
 	
 */
 
-namespace OpenHardwareMonitor.Hardware.Mainboard {
+namespace HMonZ.Hardware.Mainboard {
   internal class MainboardGroup : IGroup {
 
     private readonly Mainboard[] mainboards;

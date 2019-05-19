@@ -1,4 +1,4 @@
-﻿namespace OpenHardwareMonitor.GUI {
+﻿namespace HMonZ.GUI {
   partial class MainForm {
     /// <summary>
     /// Required designer variable.
@@ -84,7 +84,7 @@
       this.treeContextMenu = new System.Windows.Forms.ContextMenu();
       this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
       this.timer = new System.Windows.Forms.Timer(this.components);
-      this.splitContainer = new OpenHardwareMonitor.GUI.SplitContainerAdv();
+      this.splitContainer = new HMonZ.GUI.SplitContainerAdv();
       this.treeView = new Aga.Controls.Tree.TreeViewAdv();
       this.logSeparatorMenuItem = new System.Windows.Forms.MenuItem();
       this.loggingIntervalMenuItem = new System.Windows.Forms.MenuItem();
@@ -486,7 +486,7 @@
       // saveFileDialog
       // 
       this.saveFileDialog.DefaultExt = "txt";
-      this.saveFileDialog.FileName = "OpenHardwareMonitor.Report.txt";
+      this.saveFileDialog.FileName = "HMonZ.Report.txt";
       this.saveFileDialog.Filter = "Text Documents|*.txt|All Files|*.*";
       this.saveFileDialog.RestoreDirectory = true;
       this.saveFileDialog.Title = "Save Report As";

@@ -9,9 +9,9 @@
 */
 
 using System;
-using OpenHardwareMonitor.Collections;
+using HMonZ.Collections;
 
-namespace OpenHardwareMonitor.Hardware {
+namespace HMonZ.Hardware {
   internal abstract class Hardware : IHardware {
 
     private readonly Identifier identifier;

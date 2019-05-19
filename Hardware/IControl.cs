@@ -8,7 +8,7 @@
 	
 */
 
-namespace OpenHardwareMonitor.Hardware {
+namespace HMonZ.Hardware {
 
   public enum ControlMode {
     Undefined,

@@ -8,8 +8,8 @@
     <ProjectGuid>{B0397530-545A-471D-BB74-027AE456DF1A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OpenHardwareMonitor</RootNamespace>
-    <AssemblyName>OpenHardwareMonitorLib</AssemblyName>
+    <RootNamespace>HMonZ</RootNamespace>
+    <AssemblyName>HMonZLib</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>

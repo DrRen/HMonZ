@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
 
   public class GadgetWindow : NativeWindow, IDisposable {
 

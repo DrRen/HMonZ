@@ -10,9 +10,9 @@
 
 
 using System.Management.Instrumentation;
-using OpenHardwareMonitor.Hardware;
+using HMonZ.Hardware;
 
-namespace OpenHardwareMonitor.WMI {
+namespace HMonZ.WMI {
   [InstrumentationClass(InstrumentationType.Instance)]
   public class Hardware : IWmiObject {
     #region WMI Exposed

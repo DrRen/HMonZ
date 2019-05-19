@@ -11,9 +11,9 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using OpenHardwareMonitor.Utilities;
+using HMonZ.Utilities;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public class UserRadioGroup {
     private string name;
     private int value;

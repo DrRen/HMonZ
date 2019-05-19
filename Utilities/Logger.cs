@@ -13,9 +13,9 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using OpenHardwareMonitor.Hardware;
+using HMonZ.Hardware;
 
-namespace OpenHardwareMonitor.Utilities {
+namespace HMonZ.Utilities {
   public class Logger {
 
     private const string fileNameFormat = 

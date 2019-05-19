@@ -17,10 +17,10 @@ using System.Net;
 using System.Reflection;
 using System.Text;
 using System.Threading;
-using OpenHardwareMonitor.GUI;
-using OpenHardwareMonitor.Hardware;
+using HMonZ.GUI;
+using HMonZ.Hardware;
 
-namespace OpenHardwareMonitor.Utilities {
+namespace HMonZ.Utilities {
 
   public class HttpServer {
     private HttpListener listener;
@@ -139,7 +139,7 @@ namespace OpenHardwareMonitor.Utilities {
       string ext) 
     {
       // resource names do not support the hyphen
-      name = "OpenHardwareMonitor.Resources." + 
+      name = "HMonZ.Resources." + 
         name.Replace("custom-theme", "custom_theme");
 
       string[] names =
@@ -173,7 +173,7 @@ namespace OpenHardwareMonitor.Utilities {
     }
 
     private void ServeResourceImage(HttpListenerResponse response, string name) {
-      name = "OpenHardwareMonitor.Resources." + name;
+      name = "HMonZ.Resources." + name;
 
       string[] names =
         Assembly.GetExecutingAssembly().GetManifestResourceNames();

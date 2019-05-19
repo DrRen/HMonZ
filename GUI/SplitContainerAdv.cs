@@ -13,7 +13,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public class SplitContainerAdv : SplitContainer {
 
     private int delta = 0;

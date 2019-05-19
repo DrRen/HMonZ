@@ -14,9 +14,9 @@ using System.Globalization;
 using System.IO;
 using System.Text;
 using System.Xml;
-using OpenHardwareMonitor.Hardware;
+using HMonZ.Hardware;
 
-namespace OpenHardwareMonitor {
+namespace HMonZ {
   public class PersistentSettings : ISettings {
 
     private IDictionary<string, string> settings = 

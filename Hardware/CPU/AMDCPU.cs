@@ -8,7 +8,7 @@
 	
 */
 
-namespace OpenHardwareMonitor.Hardware.CPU {
+namespace HMonZ.Hardware.CPU {
 
   internal abstract class AMDCPU : GenericCPU {
 

@@ -15,7 +15,7 @@ using System.Net;
 using System.Text;
 using System.Windows.Forms;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public partial class ReportForm : Form {
 
     private string report;

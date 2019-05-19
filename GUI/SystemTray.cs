@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using OpenHardwareMonitor.Hardware;
-using OpenHardwareMonitor.Utilities;
+using HMonZ.Hardware;
+using HMonZ.Utilities;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public class SystemTray : IDisposable {
     private IComputer computer;
     private PersistentSettings settings;

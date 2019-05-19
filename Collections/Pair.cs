@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OpenHardwareMonitor.Collections {
+namespace HMonZ.Collections {
 
   public struct Pair<F, S> {
     private F first;

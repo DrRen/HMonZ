@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace OpenHardwareMonitor.Hardware {
+namespace HMonZ.Hardware {
   
   internal static class ThreadAffinity {
   

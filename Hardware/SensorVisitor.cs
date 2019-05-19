@@ -11,7 +11,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace OpenHardwareMonitor.Hardware {
+namespace HMonZ.Hardware {
 
   public class SensorVisitor : IVisitor {
     private readonly SensorEventHandler handler;

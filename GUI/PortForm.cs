@@ -18,7 +18,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Diagnostics;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public partial class PortForm : Form {
     private MainForm parent;
     private string localIP;

@@ -14,10 +14,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 using System.Windows.Forms;
-using OpenHardwareMonitor.Hardware;
-using OpenHardwareMonitor.Collections;
+using HMonZ.Hardware;
+using HMonZ.Collections;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public partial class ParameterForm : Form {
 
     private IReadOnlyArray<IParameter> parameters;

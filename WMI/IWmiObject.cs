@@ -8,7 +8,7 @@
 	
 */
 
-namespace OpenHardwareMonitor.WMI {
+namespace HMonZ.WMI {
   interface IWmiObject {
     // Both of these get exposed to WMI
     string Name { get; }

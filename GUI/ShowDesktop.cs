@@ -12,7 +12,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public class ShowDesktop {
     private static ShowDesktop instance = new ShowDesktop();
 

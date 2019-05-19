@@ -8,7 +8,7 @@
 	
 */
 
-namespace OpenHardwareMonitor.Hardware {
+namespace HMonZ.Hardware {
 
   internal interface IGroup {
 

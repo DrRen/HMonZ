@@ -11,7 +11,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
 
   public enum TemperatureUnit {
     Celsius = 0,

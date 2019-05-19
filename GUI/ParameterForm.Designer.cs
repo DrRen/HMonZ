@@ -8,7 +8,7 @@
 	
 */
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   partial class ParameterForm {
     /// <summary>
     /// Required designer variable.

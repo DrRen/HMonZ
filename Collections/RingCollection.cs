@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace OpenHardwareMonitor.Collections {
+namespace HMonZ.Collections {
   public class RingCollection<T> : IEnumerable<T> {
 
     private T[] array;

@@ -12,7 +12,7 @@ using System;
 using System.Collections.Generic;
 
 
-namespace OpenHardwareMonitor.Hardware.HDD {
+namespace HMonZ.Hardware.HDD {
 
   internal interface ISmart {
 

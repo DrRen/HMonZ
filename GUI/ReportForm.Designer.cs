@@ -1,4 +1,4 @@
-﻿namespace OpenHardwareMonitor.GUI {
+﻿namespace HMonZ.GUI {
   partial class ReportForm {
     /// <summary>
     /// Required designer variable.

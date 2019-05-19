@@ -13,14 +13,14 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using OpenHardwareMonitor.Hardware;
+using HMonZ.Hardware;
 using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.WindowsForms;
 using OxyPlot.Series;
-using OpenHardwareMonitor.Collections;
+using HMonZ.Collections;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public class PlotPanel : UserControl {
 
     private readonly PersistentSettings settings;

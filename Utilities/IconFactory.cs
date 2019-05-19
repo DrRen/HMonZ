@@ -15,7 +15,7 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Text;
 
-namespace OpenHardwareMonitor.Utilities {
+namespace HMonZ.Utilities {
   public class IconFactory {
 
     private struct BITMAPINFOHEADER {

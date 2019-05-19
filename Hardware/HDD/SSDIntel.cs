@@ -11,9 +11,9 @@
 */
 
 using System.Collections.Generic;
-using OpenHardwareMonitor.Collections;
+using HMonZ.Collections;
 
-namespace OpenHardwareMonitor.Hardware.HDD {
+namespace HMonZ.Hardware.HDD {
    
   [NamePrefix("INTEL SSD"), 
    RequireSmart(0xE1), RequireSmart(0xE8), RequireSmart(0xE9)]

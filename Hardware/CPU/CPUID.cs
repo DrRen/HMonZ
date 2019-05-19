@@ -11,7 +11,7 @@
 using System;
 using System.Text;
 
-namespace OpenHardwareMonitor.Hardware.CPU {
+namespace HMonZ.Hardware.CPU {
 
   internal enum Vendor {
     Unknown,

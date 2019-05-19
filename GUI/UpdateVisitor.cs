@@ -10,9 +10,9 @@
 
 using System;
 using System.Collections.Generic;
-using OpenHardwareMonitor.Hardware;
+using HMonZ.Hardware;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public class UpdateVisitor : IVisitor {
     public void VisitComputer(IComputer computer) {
       computer.Traverse(this);

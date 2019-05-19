@@ -11,10 +11,10 @@
 using System;
 using System.Drawing;
 using System.Collections.Generic;
-using OpenHardwareMonitor.Hardware;
-using OpenHardwareMonitor.Utilities;
+using HMonZ.Hardware;
+using HMonZ.Utilities;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public class SensorNode : Node {
     
     private ISensor sensor;

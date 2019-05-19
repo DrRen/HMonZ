@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public partial class AboutBox : Form {
     public AboutBox() {
       InitializeComponent();

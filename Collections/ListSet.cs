@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace OpenHardwareMonitor.Collections {
+namespace HMonZ.Collections {
 
   public class ListSet<T> : IEnumerable<T> {
 

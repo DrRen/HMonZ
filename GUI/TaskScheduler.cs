@@ -14,7 +14,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace OpenHardwareMonitor.TaskScheduler {
+namespace HMonZ.TaskScheduler {
 
   [StructLayout(LayoutKind.Sequential, Pack = 2)]
   public struct SYSTEMTIME {

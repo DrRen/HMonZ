@@ -10,9 +10,9 @@
 
 using System;
 using System.Collections.Generic;
-using OpenHardwareMonitor.Collections;
+using HMonZ.Collections;
 
-namespace OpenHardwareMonitor.Hardware {
+namespace HMonZ.Hardware {
 
   public enum SensorType {
     Voltage, // V

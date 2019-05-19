@@ -11,7 +11,7 @@
 using System;
 using System.Globalization;
 
-namespace OpenHardwareMonitor.Hardware.ATI {
+namespace HMonZ.Hardware.ATI {
   internal sealed class ATIGPU : Hardware {
 
     private readonly int adapterIndex;

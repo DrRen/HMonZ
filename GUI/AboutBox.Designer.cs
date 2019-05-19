@@ -1,4 +1,4 @@
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   partial class AboutBox {
     /// <summary>
     /// Required designer variable.

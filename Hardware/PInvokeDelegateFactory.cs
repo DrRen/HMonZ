@@ -13,9 +13,9 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Runtime.InteropServices;
-using OpenHardwareMonitor.Collections;
+using HMonZ.Collections;
 
-namespace OpenHardwareMonitor.Hardware {
+namespace HMonZ.Hardware {
 
   internal static class PInvokeDelegateFactory {
 

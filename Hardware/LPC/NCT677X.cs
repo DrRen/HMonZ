@@ -13,7 +13,7 @@ using System;
 using System.Globalization;
 using System.Text;
 
-namespace OpenHardwareMonitor.Hardware.LPC {
+namespace HMonZ.Hardware.LPC {
   internal class NCT677X : ISuperIO {
 
     private readonly ushort port;

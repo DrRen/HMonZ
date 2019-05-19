@@ -16,7 +16,7 @@ using System.Security.AccessControl;
 using System.Threading;
 using System.Text;
 
-namespace OpenHardwareMonitor.Hardware {
+namespace HMonZ.Hardware {
   internal static class Ring0 {
 
     private static KernelDriver driver;

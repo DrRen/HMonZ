@@ -15,9 +15,9 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Text;
-using OpenHardwareMonitor.Collections;
+using HMonZ.Collections;
 
-namespace OpenHardwareMonitor.Hardware.HDD {
+namespace HMonZ.Hardware.HDD {
   internal abstract class AbstractHarddrive : Hardware {
 
     private const int UPDATE_DIVIDER = 30; // update only every 30s

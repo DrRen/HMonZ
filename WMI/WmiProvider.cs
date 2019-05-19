@@ -12,14 +12,14 @@
 using System;
 using System.Collections.Generic;
 using System.Management.Instrumentation;
-using OpenHardwareMonitor.Hardware;
+using HMonZ.Hardware;
 
-[assembly: Instrumented("root/OpenHardwareMonitor")]
+[assembly: Instrumented("root/HMonZ")]
 
 [System.ComponentModel.RunInstaller(true)]
 public class InstanceInstaller : DefaultManagementProjectInstaller { }
 
-namespace OpenHardwareMonitor.WMI {
+namespace HMonZ.WMI {
   /// <summary>
   /// The WMI Provider.
   /// This class is not exposed to WMI itself.

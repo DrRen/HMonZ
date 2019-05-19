@@ -9,7 +9,7 @@
 	
 */
 
-namespace OpenHardwareMonitor.Hardware.HDD {
+namespace HMonZ.Hardware.HDD {
   /// <summary>
   /// Localization class for SMART attribute names.
   /// </summary>

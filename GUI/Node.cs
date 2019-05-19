@@ -15,7 +15,7 @@ using System.Collections.ObjectModel;
 using System.Drawing;
 using Aga.Controls.Tree;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public class Node {
 
     private TreeModel treeModel;

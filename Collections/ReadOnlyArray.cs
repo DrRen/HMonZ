@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace OpenHardwareMonitor.Collections {
+namespace HMonZ.Collections {
 
   public class ReadOnlyArray<T> : IReadOnlyArray<T> {
 

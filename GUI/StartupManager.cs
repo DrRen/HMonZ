@@ -6,9 +6,9 @@ using System.Security;
 using System.Security.Principal;
 using System.Windows.Forms;
 using Microsoft.Win32;
-using OpenHardwareMonitor.TaskScheduler;
+using HMonZ.TaskScheduler;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public class StartupManager {
 
     private TaskSchedulerClass scheduler;
@@ -80,7 +80,7 @@ namespace OpenHardwareMonitor.GUI {
             Registry.CurrentUser.OpenSubKey(REGISTRY_RUN)) {
             startup = false;
             if (key != null) {
-              string value = (string)key.GetValue("OpenHardwareMonitor");
+              string value = (string)key.GetValue("HMonZ");
               if (value != null)
                 startup = value == Application.ExecutablePath;
             }            
@@ -138,12 +138,12 @@ namespace OpenHardwareMonitor.GUI {
 
     private void CreateRegistryRun() {
       RegistryKey key = Registry.CurrentUser.CreateSubKey(REGISTRY_RUN);     
-      key.SetValue("OpenHardwareMonitor", Application.ExecutablePath);
+      key.SetValue("HMonZ", Application.ExecutablePath);
     }
 
     private void DeleteRegistryRun() {
       RegistryKey key = Registry.CurrentUser.CreateSubKey(REGISTRY_RUN);
-      key.DeleteValue("OpenHardwareMonitor");
+      key.DeleteValue("HMonZ");
     }
 
     public bool IsAvailable {

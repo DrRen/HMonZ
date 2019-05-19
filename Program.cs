@@ -12,9 +12,9 @@ using System;
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
-using OpenHardwareMonitor.GUI;
+using HMonZ.GUI;
 
-namespace OpenHardwareMonitor {
+namespace HMonZ {
   public static class Program {
 
     [STAThread]
@@ -58,7 +58,7 @@ namespace OpenHardwareMonitor {
     private static bool AllRequiredFilesAvailable() {
       if (!IsFileAvailable("Aga.Controls.dll"))
         return false;
-      if (!IsFileAvailable("OpenHardwareMonitorLib.dll"))
+      if (!IsFileAvailable("HMonZLib.dll"))
         return false;
       if (!IsFileAvailable("OxyPlot.dll"))
         return false;

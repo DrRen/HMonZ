@@ -11,9 +11,9 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using OpenHardwareMonitor.Hardware;
+using HMonZ.Hardware;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public class HardwareNode : Node {
 
     private PersistentSettings settings;

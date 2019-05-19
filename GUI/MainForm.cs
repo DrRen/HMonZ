@@ -20,11 +20,11 @@ using System.Reflection;
 using System.Windows.Forms;
 using Aga.Controls.Tree;
 using Aga.Controls.Tree.NodeControls;
-using OpenHardwareMonitor.Hardware;
-using OpenHardwareMonitor.WMI;
-using OpenHardwareMonitor.Utilities;
+using HMonZ.Hardware;
+using HMonZ.WMI;
+using HMonZ.Utilities;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public partial class MainForm : Form {
 
     private PersistentSettings settings;

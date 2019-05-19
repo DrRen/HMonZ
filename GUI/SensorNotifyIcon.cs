@@ -15,10 +15,10 @@ using System.Drawing.Imaging;
 using System.Drawing.Text;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using OpenHardwareMonitor.Hardware;
-using OpenHardwareMonitor.Utilities;
+using HMonZ.Hardware;
+using HMonZ.Utilities;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public class SensorNotifyIcon : IDisposable {
 
     private UnitManager unitManager;

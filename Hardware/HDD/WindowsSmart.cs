@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using System.Management;
 using System.Runtime.InteropServices;
 
-namespace OpenHardwareMonitor.Hardware.HDD {
+namespace HMonZ.Hardware.HDD {
 
   internal class WindowsSmart : ISmart {
     [Flags]

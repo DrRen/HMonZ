@@ -14,11 +14,11 @@ using System.Drawing;
 using System.IO;
 using System.Reflection;
 
-namespace OpenHardwareMonitor.Utilities {
+namespace HMonZ.Utilities {
   public class EmbeddedResources {
 
     public static Image GetImage(string name) {
-      name = "OpenHardwareMonitor.Resources." + name;
+      name = "HMonZ.Resources." + name;
 
       string[] names = 
         Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -45,7 +45,7 @@ namespace OpenHardwareMonitor.Utilities {
     }
 
     public static Icon GetIcon(string name) {
-      name = "OpenHardwareMonitor.Resources." + name;
+      name = "HMonZ.Resources." + name;
 
       string[] names =
         Assembly.GetExecutingAssembly().GetManifestResourceNames();

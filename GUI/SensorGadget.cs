@@ -14,9 +14,9 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
 using System.IO;
-using OpenHardwareMonitor.Hardware;
+using HMonZ.Hardware;
 
-namespace OpenHardwareMonitor.GUI {
+namespace HMonZ.GUI {
   public class SensorGadget : Gadget {
 
     private UnitManager unitManager;

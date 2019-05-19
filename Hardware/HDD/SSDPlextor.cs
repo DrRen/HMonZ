@@ -8,9 +8,9 @@
 	
 */
 
-namespace OpenHardwareMonitor.Hardware.HDD {
+namespace HMonZ.Hardware.HDD {
   using System.Collections.Generic;
-  using OpenHardwareMonitor.Collections;
+  using HMonZ.Collections;
 
   [NamePrefix("PLEXTOR")]
   internal class SSDPlextor : AbstractHarddrive {
