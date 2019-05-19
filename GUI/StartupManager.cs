@@ -1,14 +1,4 @@
-﻿/*
- 
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
- 
-  Copyright (C) 2009-2010 Michael Möller <mmoeller@openhardwaremonitor.org>
-	
-*/
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
@@ -59,7 +49,7 @@ namespace OpenHardwareMonitor.GUI {
             // check if the taskscheduler is running
             IRunningTaskCollection collection = scheduler.GetRunningTasks(0);            
 
-            ITaskFolder folder = scheduler.GetFolder("\\Open Hardware Monitor");
+            ITaskFolder folder = scheduler.GetFolder("\\HMonZ");
             IRegisteredTask task = folder.GetTask("Startup");
             startup = (task != null) && 
               (task.Definition.Triggers.Count > 0) &&
@@ -107,7 +97,7 @@ namespace OpenHardwareMonitor.GUI {
     private void CreateSchedulerTask() {
       ITaskDefinition definition = scheduler.NewTask(0);
       definition.RegistrationInfo.Description =
-        "This task starts the Open Hardware Monitor on Windows startup.";
+        "This task starts the HMonZ on Windows startup.";
       definition.Principal.RunLevel =
         TASK_RUNLEVEL.TASK_RUNLEVEL_HIGHEST;
       definition.Settings.DisallowStartIfOnBatteries = false;
@@ -126,9 +116,9 @@ namespace OpenHardwareMonitor.GUI {
       ITaskFolder root = scheduler.GetFolder("\\");
       ITaskFolder folder;
       try {
-        folder = root.GetFolder("Open Hardware Monitor");
+        folder = root.GetFolder("HMonZ");
       } catch (IOException) {
-        folder = root.CreateFolder("Open Hardware Monitor", "");
+        folder = root.CreateFolder("HMonZ", "");
       }
       folder.RegisterTaskDefinition("Startup", definition,
         (int)TASK_CREATION.TASK_CREATE_OR_UPDATE, null, null,
@@ -138,11 +128,11 @@ namespace OpenHardwareMonitor.GUI {
     private void DeleteSchedulerTask() {
       ITaskFolder root = scheduler.GetFolder("\\");
       try {
-        ITaskFolder folder = root.GetFolder("Open Hardware Monitor");
+        ITaskFolder folder = root.GetFolder("HMonZ");
         folder.DeleteTask("Startup", 0);
       } catch (IOException) { }
       try {
-        root.DeleteFolder("Open Hardware Monitor", 0);
+        root.DeleteFolder("HMonZ", 0);
       } catch (IOException) { }
     }
 

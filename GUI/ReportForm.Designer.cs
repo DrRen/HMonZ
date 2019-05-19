@@ -1,14 +1,4 @@
-﻿/*
- 
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
- 
-  Copyright (C) 2009-2010 Michael Möller <mmoeller@openhardwaremonitor.org>
-	
-*/
-
-namespace OpenHardwareMonitor.GUI {
+﻿namespace OpenHardwareMonitor.GUI {
   partial class ReportForm {
     /// <summary>
     /// Required designer variable.
@@ -193,7 +183,7 @@ namespace OpenHardwareMonitor.GUI {
       this.titleLabel.Name = "titleLabel";
       this.titleLabel.Size = new System.Drawing.Size(409, 13);
       this.titleLabel.TabIndex = 10;
-      this.titleLabel.Text = "Help improve the Open Hardware Monitor by submitting a report about your hardware" +
+      this.titleLabel.Text = "Help improve the HMonZ by submitting a report about your hardware" +
           ".";
       // 
       // ReportForm
@@ -218,7 +208,7 @@ namespace OpenHardwareMonitor.GUI {
       this.Name = "ReportForm";
       this.ShowIcon = false;
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-      this.Text = "Open Hardware Monitor";
+      this.Text = "HMonZ";
       this.commentPanel.ResumeLayout(false);
       this.commentPanel.PerformLayout();
       this.reportPanel.ResumeLayout(false);

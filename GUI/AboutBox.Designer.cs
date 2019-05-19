@@ -1,13 +1,3 @@
-/*
- 
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
- 
-  Copyright (C) 2009-2018 Michael Möller <mmoeller@openhardwaremonitor.org>
-	
-*/
-
 namespace OpenHardwareMonitor.GUI {
   partial class AboutBox {
     /// <summary>
@@ -74,7 +64,7 @@ namespace OpenHardwareMonitor.GUI {
       this.label1.Name = "label1";
       this.label1.Size = new System.Drawing.Size(120, 13);
       this.label1.TabIndex = 2;
-      this.label1.Text = "Open Hardware Monitor";
+      this.label1.Text = "HMonZ";
       // 
       // label2
       // 

@@ -1,15 +1,4 @@
-﻿/*
- 
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
- 
-  Copyright (C) 2009-2010 Michael Möller <mmoeller@openhardwaremonitor.org>
-	
-*/
-
-
-namespace OpenHardwareMonitor.GUI {
+﻿namespace OpenHardwareMonitor.GUI {
   partial class CrashForm {
     /// <summary>
     /// Required designer variable.
@@ -96,7 +85,7 @@ namespace OpenHardwareMonitor.GUI {
       this.titleLabel.Padding = new System.Windows.Forms.Padding(10);
       this.titleLabel.Size = new System.Drawing.Size(619, 52);
       this.titleLabel.TabIndex = 4;
-      this.titleLabel.Text = "Open Hardware Monitor has encountered a problem and needs to close. We are sorry " +
+      this.titleLabel.Text = "HMonZ has encountered a problem and needs to close. We are sorry " +
           "for the inconvenience.";
       // 
       // label3
@@ -225,7 +214,7 @@ namespace OpenHardwareMonitor.GUI {
       this.Name = "CrashReportForm";
       this.ShowIcon = false;
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-      this.Text = "Open Hardware Monitor";
+      this.Text = "HMonZ";
       this.commentPanel.ResumeLayout(false);
       this.commentPanel.PerformLayout();
       this.reportPanel.ResumeLayout(false);
