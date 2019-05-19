@@ -11,11 +11,10 @@
     <AssemblyName>HMonZ</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <RootNamespace>HMonZ</RootNamespace>
+    <RootNamespace>OpenHardwareMonitor</RootNamespace>
     <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
     <ApplicationManifest>Resources\app.manifest</ApplicationManifest>
-    <StartupObject>
-    </StartupObject>
+    <StartupObject>HMonZ.Program</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>

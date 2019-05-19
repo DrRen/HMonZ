@@ -139,7 +139,7 @@ namespace HMonZ.Utilities {
       string ext) 
     {
       // resource names do not support the hyphen
-      name = "HMonZ.Resources." + 
+      name = "OpenHardwareMonitor.Resources." + 
         name.Replace("custom-theme", "custom_theme");
 
       string[] names =
@@ -173,7 +173,7 @@ namespace HMonZ.Utilities {
     }
 
     private void ServeResourceImage(HttpListenerResponse response, string name) {
-      name = "HMonZ.Resources." + name;
+      name = "OpenHardwareMonitor.Resources." + name;
 
       string[] names =
         Assembly.GetExecutingAssembly().GetManifestResourceNames();

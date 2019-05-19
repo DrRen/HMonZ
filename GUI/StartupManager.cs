@@ -80,7 +80,7 @@ namespace HMonZ.GUI {
             Registry.CurrentUser.OpenSubKey(REGISTRY_RUN)) {
             startup = false;
             if (key != null) {
-              string value = (string)key.GetValue("HMonZ");
+              string value = (string)key.GetValue("OpenHardwareMonitor");
               if (value != null)
                 startup = value == Application.ExecutablePath;
             }            
@@ -138,12 +138,12 @@ namespace HMonZ.GUI {
 
     private void CreateRegistryRun() {
       RegistryKey key = Registry.CurrentUser.CreateSubKey(REGISTRY_RUN);     
-      key.SetValue("HMonZ", Application.ExecutablePath);
+      key.SetValue("OpenHardwareMonitor", Application.ExecutablePath);
     }
 
     private void DeleteRegistryRun() {
       RegistryKey key = Registry.CurrentUser.CreateSubKey(REGISTRY_RUN);
-      key.DeleteValue("HMonZ");
+      key.DeleteValue("OpenHardwareMonitor");
     }
 
     public bool IsAvailable {

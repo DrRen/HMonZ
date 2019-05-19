@@ -14,7 +14,7 @@ using System.Collections.Generic;
 using System.Management.Instrumentation;
 using HMonZ.Hardware;
 
-[assembly: Instrumented("root/HMonZ")]
+[assembly: Instrumented("root/OpenHardwareMonitor")]
 
 [System.ComponentModel.RunInstaller(true)]
 public class InstanceInstaller : DefaultManagementProjectInstaller { }

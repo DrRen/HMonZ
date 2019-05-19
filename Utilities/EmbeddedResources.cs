@@ -18,7 +18,7 @@ namespace HMonZ.Utilities {
   public class EmbeddedResources {
 
     public static Image GetImage(string name) {
-      name = "HMonZ.Resources." + name;
+      name = "OpenHardwareMonitor.Resources." + name;
 
       string[] names = 
         Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -45,7 +45,7 @@ namespace HMonZ.Utilities {
     }
 
     public static Icon GetIcon(string name) {
-      name = "HMonZ.Resources." + name;
+      name = "OpenHardwareMonitor.Resources." + name;
 
       string[] names =
         Assembly.GetExecutingAssembly().GetManifestResourceNames();
